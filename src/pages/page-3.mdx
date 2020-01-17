@@ -1,0 +1,112 @@
+# Page 3
+
+This is a test page to test out some markdown support and other plugins.
+
+
+### Mermaid Support
+
+`mermaid-svg`
+
+```mermaid-svg
+graph LR
+install[Install Plugin]
+install --> configure[Configure Plugin]
+configure --> draw[Draw Fancy Diagrams]
+```
+
+```mermaid
+graph LR
+install[Install Plugin]
+install --> configure[Configure Plugin]
+configure --> draw[Draw Fancy Diagrams]
+```
+
+### Ascii Drawing Support
+
+`bob-svg`
+
+```bob-svg
+*----->
+```
+
+```bob
+*----->
+```
+
+```bob-svg
+ o->  Basic shapes
+                                                        .
+       +------+   .------.    .------.      /\        .' `.
+       |      |   |      |   (        )    /  \     .'     `.
+       +------+   '------'    '------'    '----'     `.   .'
+         _______            ________                   `.'   ^ /
+        /       \      /\   \       \      ---->    | ^     / /
+       /         \    /  \   )       )     <----    | |    / v
+       \         /    \  /  /_______/               v |
+        \_______/      \/
+
+        .-----------.       .   <.      .>  .          ^  \
+       (             )     (      )    (     )          \  \
+        '-----+ ,---'       `>   '      `  <'            \  v
+              |/
+
+
+ o->  Quick logo scribbles
+        .---.                      _
+       /-o-/--       .--.         |-|               .--.
+    .-/ / /->       /--. \     .--)-|    .--.-.    //.-.\
+   ( *  \/         / O  )|     |  |-|    |->| |   (+(-*-))
+    '-.  \        /\ |-//      .  * |    '--'-'    \\'-'/
+       \ /        \ '+'/        \__/                '--'
+        '          '--'
+
+```
+
+```bob
+ o->  Basic shapes
+                                                        .
+       +------+   .------.    .------.      /\        .' `.
+       |      |   |      |   (        )    /  \     .'     `.
+       +------+   '------'    '------'    '----'     `.   .'
+         _______            ________                   `.'   ^ /
+        /       \      /\   \       \      ---->    | ^     / /
+       /         \    /  \   )       )     <----    | |    / v
+       \         /    \  /  /_______/               v |
+        \_______/      \/
+
+        .-----------.       .   <.      .>  .          ^  \
+       (             )     (      )    (     )          \  \
+        '-----+ ,---'       `>   '      `  <'            \  v
+              |/
+
+
+ o->  Quick logo scribbles
+        .---.                      _
+       /-o-/--       .--.         |-|               .--.
+    .-/ / /->       /--. \     .--)-|    .--.-.    //.-.\
+   ( *  \/         / O  )|     |  |-|    |->| |   (+(-*-))
+    '-.  \        /\ |-//      .  * |    '--'-'    \\'-'/
+       \ /        \ '+'/        \__/                '--'
+        '          '--'
+
+```
+
+### Graphviz Dot Support
+
+`dot-svg`
+
+```dot-svg
+strict graph {
+  a -- b
+  a -- b
+  b -- a [color=blue]
+}
+```
+
+```dot
+strict graph {
+  a -- b
+  a -- b
+  b -- a [color=blue]
+}
+```

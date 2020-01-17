@@ -95,3 +95,9 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+
+### Dependencies
+
+- [graphviz](https://graphviz.gitlab.io/download/)
+- [svgbob](https://github.com/ivanceras/svgbob)

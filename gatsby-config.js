@@ -1,3 +1,6 @@
+const remarkMermaid = require("remark-mermaid");
+const emoji = require('remark-emoji');
+
 module.exports = {
   pathPrefix: "/pristine-typescript-gatsby-react-material-ui",
   siteMetadata: {
@@ -12,12 +15,29 @@ module.exports = {
       {
         name: 'page2',
         link: '/page-2'
+      },
+      {
+        name: 'page3',
+        link: '/page-3'
       }
     ]
   },
   plugins: [
+    "gatsby-remark-draw",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: "gatsby-remark-draw",
+            options: {
+              strategy: "img"
+            }
+          }
+        ],
+      },
+    },
     "gatsby-plugin-material-ui",
-    "gatsby-plugin-mdx",
     "gatsby-plugin-layout",
     "gatsby-plugin-offline",
     "gatsby-plugin-typescript",

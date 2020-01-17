@@ -20,6 +20,17 @@ const SecondPage = () => (
         Go back to the homepage
       </Typography>
     </Link>
+    <Typography>OR</Typography>
+    <Link
+      component={(props: { children: any }) => (
+        <GatsbyLink to={"/page-3"}>
+          {props.children}
+        </GatsbyLink>
+      )}>
+      <Typography color="textSecondary" variant="body1">
+        Go to the page-3
+      </Typography>
+    </Link>
   </>
 );
 
