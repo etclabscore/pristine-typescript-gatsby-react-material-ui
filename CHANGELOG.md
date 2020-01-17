@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.3...1.0.4) (2020-01-17)
+
+
+### Bug Fixes
+
+* add emoji support + fixed header + move mdx to md extension ([af0e032](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/af0e03202ecde087ce01bce282e0a5883875da9d))
+
 ## [1.0.3](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.2...1.0.3) (2020-01-17)
 
 
