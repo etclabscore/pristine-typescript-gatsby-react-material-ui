@@ -8,8 +8,10 @@ import { Typography } from "@material-ui/core";
 const SecondPage = () => (
   <>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <Typography variant="h1">Hi from the second page</Typography>
+    <br />
+    <Typography variant="body1">Welcome to page 2</Typography>
+    <br />
     <Link
       component={(props: { children: any }) => (
         <GatsbyLink to={"/"}>
@@ -20,7 +22,9 @@ const SecondPage = () => (
         Go back to the homepage
       </Typography>
     </Link>
+    <br />
     <Typography>OR</Typography>
+    <br />
     <Link
       component={(props: { children: any }) => (
         <GatsbyLink to={"/page-3"}>

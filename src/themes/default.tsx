@@ -1,7 +1,28 @@
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 import grey from "@material-ui/core/colors/grey";
 
-export const lightTheme = createMuiTheme({
+const typography = {
+  h1: {
+    fontSize: "4rem",
+  },
+  h2: {
+    fontSize: "3.5rem",
+  },
+  h3: {
+    fontSize: "3rem",
+  },
+  h4: {
+    fontSize: "2.5rem",
+  },
+  h5: {
+    fontSize: "2rem",
+  },
+  h6: {
+    fontSize: "1.5rem",
+  },
+};
+
+export const lightTheme = responsiveFontSizes(createMuiTheme({
   props: {
     MuiAppBar: {
       position: "sticky",
@@ -22,9 +43,10 @@ export const lightTheme = createMuiTheme({
       default: "#fff",
     },
   },
-});
+  typography,
+}));
 
-export const darkTheme = createMuiTheme({
+export const darkTheme = responsiveFontSizes(createMuiTheme({
   props: {
     MuiAppBar: {
       position: "sticky",
@@ -52,7 +74,8 @@ export const darkTheme = createMuiTheme({
       },
     },
   },
-});
+  typography,
+}));
 
 export default {
   darkTheme,

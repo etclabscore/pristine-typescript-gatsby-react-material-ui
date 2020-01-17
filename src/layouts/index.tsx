@@ -15,12 +15,12 @@ const Layout: React.FC = ({ children }) => {
   const darkMode = useDarkMode();
   const theme = darkMode.value ? darkTheme : lightTheme;
   const components = {
-    h1: (props: any) => <Typography variant={"h1"} {...props} />,
-    h2: (props: any) => <Typography variant={"h2"} {...props} />,
-    h3: (props: any) => <Typography variant={"h3"} {...props} />,
-    h4: (props: any) => <Typography variant={"h4"} {...props} />,
-    h5: (props: any) => <Typography variant={"h5"} {...props} />,
-    h6: (props: any) => <Typography variant={"h6"} {...props} />,
+    h1: (props: any) => <Typography variant={"h1"} {...props} gutterBottom={true}/>,
+    h2: (props: any) => <Typography variant={"h2"} {...props} gutterBottom={true}/>,
+    h3: (props: any) => <Typography variant={"h3"} {...props} gutterBottom={true}/>,
+    h4: (props: any) => <Typography variant={"h4"} {...props} gutterBottom={true}/>,
+    h5: (props: any) => <Typography variant={"h5"} {...props} gutterBottom={true}/>,
+    h6: (props: any) => <Typography variant={"h6"} {...props} gutterBottom={true}/>,
     Demo: (props: any) => <h1>This is a demo component</h1>,
     code: (props: any) => <CodeBlock darkMode={darkMode.value} {...props} />,
     thematicBreak: (props: any) => <Divider  {...props} />,
@@ -54,7 +54,7 @@ const Layout: React.FC = ({ children }) => {
     <MDXProvider components={components}>
       <MuiThemeProvider theme={theme}>
         <Sidebar open={open} onClose={() => setOpen(false)} />
-        <AppBar position="sticky" color="default" elevation={0}>
+        <AppBar position="fixed" color="default" elevation={0}>
           <Toolbar>
             <IconButton onClick={() => setOpen(true)}>
               <MenuIcon />
@@ -78,7 +78,7 @@ const Layout: React.FC = ({ children }) => {
         </AppBar>
       <div>
         <CssBaseline />
-        <div style={{ padding: "30px" }}>
+        <div style={{ padding: "30px", paddingTop: "56px" }}>
           {children}
         </div>
       </div>
