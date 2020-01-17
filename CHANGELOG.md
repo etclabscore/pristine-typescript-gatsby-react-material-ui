@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.4...1.0.5) (2020-01-17)
+
+
+### Bug Fixes
+
+* **CI:** add headless chrome deps ([e717401](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/e71740118eaf3ec9d8d281b6416c8b36f76c48f6))
+
 ## [1.0.4](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.3...1.0.4) (2020-01-17)
 
 
