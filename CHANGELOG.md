@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.2...1.0.3) (2020-01-17)
+
+
+### Bug Fixes
+
+* add spacing and fix header fontsizes ([b70c383](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/b70c3834fff98975cbd46a03c9e6d4af4bf97d82))
+* top padding to deal with fixed header ([1e94a14](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/1e94a144965d7faf66da4615d5d105ac3ecfdfa9))
+
 ## [1.0.2](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.1...1.0.2) (2020-01-17)
 
 
