@@ -78,7 +78,7 @@ const Layout: React.FC = ({ children }) => {
         </AppBar>
       <div>
         <CssBaseline />
-        <div style={{ padding: "30px", paddingTop: "56px" }}>
+        <div style={{ padding: "30px", paddingTop: "64px" }}>
           {children}
         </div>
       </div>
