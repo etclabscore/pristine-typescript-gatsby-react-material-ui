@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.0...1.0.1) (2020-01-17)
+
+
+### Bug Fixes
+
+* add drawer ([d7141b9](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/d7141b9fd115e00cba12139feac3ab750ad816bd))
+
 # 1.0.0 (2020-01-16)
 
 
