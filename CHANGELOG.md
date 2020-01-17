@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.1...1.0.2) (2020-01-17)
+
+
+### Bug Fixes
+
+* add test page 3 with markdown examples ([b246516](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/b24651690c7e055479e443eb13ed51b78f0a6129))
+* bump rust version ([412c5ab](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/412c5ab50083c764f9e482ee36c2ccae9ee3751b))
+
 ## [1.0.1](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.0...1.0.1) (2020-01-17)
 
 
