@@ -27,10 +27,10 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-d1ced36bbf2607bdaead.js"
+    "url": "webpack-runtime-92168d1052206f1d50fc.js"
   },
   {
-    "url": "styles.6ef714ca00efffa92863.css"
+    "url": "styles.ad6faadd2034ea1543ca.css"
   },
   {
     "url": "styles-afbaef74578975e92460.js"
@@ -39,14 +39,14 @@ self.__precacheManifest = [
     "url": "commons-5ca348266bf615bb4946.js"
   },
   {
-    "url": "app-1f45a52d78ca4c3e3924.js"
+    "url": "app-25df2ecbfe6fcb2448b1.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-328a2b7c20aa4ad52a6f.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "d01187b5984ff05999aea6cba49e01e2"
+    "revision": "3dd99c7b026c94b3f9afa14a145110b6"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
@@ -147,7 +147,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/pristine-typescript-gatsby-react-material-ui/app-1f45a52d78ca4c3e3924.js`))) {
+  if (!resources || !(await caches.match(`/pristine-typescript-gatsby-react-material-ui/app-25df2ecbfe6fcb2448b1.js`))) {
     return await fetch(event.request)
   }
 
