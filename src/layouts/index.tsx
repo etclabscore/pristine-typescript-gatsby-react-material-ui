@@ -1,12 +1,14 @@
-import React from "react";
-import { MuiThemeProvider, AppBar, Toolbar, Typography, IconButton, Tooltip, CssBaseline, Grid, Table, TableRow, TableBody, TableCell, TableHead, Link, Divider } from "@material-ui/core"; //tslint:disable-line
+import React, { useState } from "react";
+import { MuiThemeProvider, AppBar, Toolbar, Typography, IconButton, Tooltip, CssBaseline, Grid, Table, TableRow, TableBody, TableCell, TableHead, Link, Divider, Drawer } from "@material-ui/core"; //tslint:disable-line
 import useDarkMode from "use-dark-mode";
 import Brightness3Icon from "@material-ui/icons/Brightness3";
+import MenuIcon from "@material-ui/icons/Menu";
 import WbSunnyIcon from "@material-ui/icons/WbSunny";
 import { lightTheme, darkTheme } from "../themes/default";
 import { MDXProvider } from "@mdx-js/react";
 import CodeBlock from "../components/CodeBlock";
-import { Link as GatsbyLink } from "gatsby";
+import { useStaticQuery, graphql, Link as GatsbyLink } from "gatsby";
+import Sidebar from "../components/Sidebar";
 import "./index.css";
 
 const Layout: React.FC = ({ children }) => {
@@ -35,39 +37,53 @@ const Layout: React.FC = ({ children }) => {
       );
     },
   };
+  const [open, setOpen] = useState();
+
+  const data = useStaticQuery(graphql`
+    query LayouQuery {
+      site {
+        siteMetadata {
+          title
+          description
+        }
+      }
+    }
+  `);
 
   return (
     <MDXProvider components={components}>
       <MuiThemeProvider theme={theme}>
+        <Sidebar open={open} onClose={() => setOpen(false)} />
         <AppBar position="sticky" color="default" elevation={0}>
           <Toolbar>
+            <IconButton onClick={() => setOpen(true)}>
+              <MenuIcon />
+            </IconButton>
             <Grid container alignContent="center" alignItems="center" justify="space-between">
-              <Typography variant="h6">
-                <GatsbyLink to="/">
-                  <Link>
-                    Pristine
-                  </Link>
-                </GatsbyLink>
-              </Typography>
-              <Typography variant="caption">typescript-gatsby-react-material-ui</Typography>
-              <Grid item>
-                <Tooltip title={"Toggle Dark Mode"}>
-                  <IconButton onClick={darkMode.toggle}>
-                    {darkMode.value ? <Brightness3Icon /> : <WbSunnyIcon />}
-                  </IconButton>
-                </Tooltip>
-              </Grid>
+              <GatsbyLink to="/" style={{textDecoration: "none"}}>
+                <Typography color="textSecondary" variant="h6">
+                  {data.site.siteMetadata.title}
+                </Typography>
+              </GatsbyLink>
+            <Typography variant="caption">{data.site.siteMetadata.description}</Typography>
+            <Grid item>
+              <Tooltip title={"Toggle Dark Mode"}>
+                <IconButton onClick={darkMode.toggle}>
+                  {darkMode.value ? <Brightness3Icon /> : <WbSunnyIcon />}
+                </IconButton>
+              </Tooltip>
+            </Grid>
             </Grid>
           </Toolbar>
         </AppBar>
-        <div>
-          <CssBaseline />
-          <div style={{ padding: "30px" }}>
-            {children}
-          </div>
+      <div>
+        <CssBaseline />
+        <div style={{ padding: "30px" }}>
+          {children}
         </div>
+      </div>
       </MuiThemeProvider >
-    </MDXProvider>
+    </MDXProvider >
   );
 };
 

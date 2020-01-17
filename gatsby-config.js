@@ -1,9 +1,19 @@
 module.exports = {
   pathPrefix: "/pristine-typescript-gatsby-react-material-ui",
   siteMetadata: {
-    title: `Pristine Gatsby Default Starter`,
-    description: ``,
+    title: `Pristine`,
+    description: `typescript-gatsby-react-material-ui`,
     author: ``,
+    menuLinks: [
+      {
+        name: 'home',
+        link: '/'
+      },
+      {
+        name: 'page2',
+        link: '/page-2'
+      }
+    ]
   },
   plugins: [
     "gatsby-plugin-material-ui",
@@ -24,14 +34,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `pristine-site`,
+        short_name: `pristine-site`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `transparent`,
+        theme_color: `transparent`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    "gatsby-plugin-offline"
   ],
 }
