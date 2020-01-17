@@ -1,5 +1,4 @@
-const remarkMermaid = require("remark-mermaid");
-const emoji = require('remark-emoji');
+const emoji = require("remark-emoji");
 
 module.exports = {
   pathPrefix: "/pristine-typescript-gatsby-react-material-ui",
@@ -27,6 +26,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-mdx",
       options: {
+        extensions: [`.mdx`, `.md`],
+        remarkPlugins: [emoji],
         gatsbyRemarkPlugins: [
           {
             resolve: "gatsby-remark-draw",
@@ -63,6 +64,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    "gatsby-plugin-offline"
+    "gatsby-plugin-offline",
+    "gatsby-plugin-use-dark-mode"
   ],
 }

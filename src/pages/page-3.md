@@ -141,7 +141,6 @@ This is an example of an h6
 }
 ```
 
-
 ###### Table Example
 
 Name | Type | Description
@@ -151,3 +150,7 @@ Foo | Any | Allows Foo. The foo name MUST be bar. The value can be `null`.
 Foo | Any | Allows Foo. The foo name MUST be bar. The value can be `null`.
 Foo | Any | Allows Foo. The foo name MUST be bar. The value can be `null`.
 Foo | Any | Allows Foo. The foo name MUST be bar. The value can be `null`.
+
+###### Emoji example
+
+:+1: :dog:
