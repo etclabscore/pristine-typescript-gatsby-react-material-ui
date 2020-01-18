@@ -9,19 +9,31 @@ module.exports = {
     menuLinks: [
       {
         name: 'home',
-        link: '/'
-      },
-      {
-        name: 'page2',
-        link: '/page-2'
+        link: '/',
+        ignoreNextPrev: true
       },
       {
         name: 'page3',
         link: '/page-3'
+      },
+      {
+        name: 'page4',
+        link: '/page-4'
+      },
+      {
+        name: 'page5',
+        link: '/page-5'
       }
     ]
   },
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `docs`,
+        path: `${__dirname}/src/docs`,
+      },
+    },
     "gatsby-remark-draw",
     {
       resolve: "gatsby-plugin-mdx",
