@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.1.0...1.1.1) (2020-01-18)
+
+
+### Bug Fixes
+
+* material ui theme updates ([002995b](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/002995b924dc2ca3941d7791d3b71b531fa36fab))
+
 # [1.1.0](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.5...1.1.0) (2020-01-18)
 
 
