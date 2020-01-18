@@ -20,6 +20,10 @@ const typography = {
   h6: {
     fontSize: "1.5rem",
   },
+  body1: {
+    fontSize: "1rem",
+  },
+  fontSize: 20,
 };
 
 export const lightTheme = responsiveFontSizes(createMuiTheme({
