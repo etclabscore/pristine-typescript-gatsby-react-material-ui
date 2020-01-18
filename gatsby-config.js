@@ -27,43 +27,7 @@ module.exports = {
     ]
   },
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `docs`,
-        path: `${__dirname}/src/docs`,
-      },
-    },
-    "gatsby-remark-draw",
-    {
-      resolve: "gatsby-plugin-mdx",
-      options: {
-        extensions: [`.mdx`, `.md`],
-        remarkPlugins: [emoji],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: "gatsby-remark-draw",
-            options: {
-              strategy: "img"
-            }
-          }
-        ],
-      },
-    },
-    "gatsby-plugin-material-ui",
-    "gatsby-plugin-layout",
-    "gatsby-plugin-offline",
-    "gatsby-plugin-typescript",
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    "@etclabscore/gatsby-theme-pristine",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -75,8 +39,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-    },
-    "gatsby-plugin-offline",
-    "gatsby-plugin-use-dark-mode"
+    }
   ],
 }
