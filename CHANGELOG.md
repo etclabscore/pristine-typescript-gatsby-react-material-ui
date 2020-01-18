@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.5...1.1.0) (2020-01-18)
+
+
+### Features
+
+* add prev next for menuLinks ([2a4f356](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/2a4f3569731ba9beb55a4e154c95a7a3bf01cc24))
+
 ## [1.0.5](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.0.4...1.0.5) (2020-01-17)
 
 
