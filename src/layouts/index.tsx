@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MuiThemeProvider, AppBar, Toolbar, Typography, IconButton, Tooltip, CssBaseline, Grid, Table, TableRow, TableBody, TableCell, TableHead, Link, Divider, Drawer } from "@material-ui/core"; //tslint:disable-line
+import { MuiThemeProvider, AppBar, Toolbar, Typography, IconButton, Tooltip, CssBaseline, Grid, Table, TableRow, TableBody, TableCell, TableHead, Link, Divider, Drawer, Container } from "@material-ui/core"; //tslint:disable-line
 import useDarkMode from "use-dark-mode";
 import Brightness3Icon from "@material-ui/icons/Brightness3";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -76,12 +76,12 @@ const Layout: React.FC = ({ children }) => {
             </Grid>
           </Toolbar>
         </AppBar>
-        <div>
+        <Container>
           <CssBaseline />
           <div style={{ padding: "30px", paddingTop: "64px" }}>
             {children}
           </div>
-        </div>
+        </Container>
       </MuiThemeProvider >
     </MDXProvider >
   );

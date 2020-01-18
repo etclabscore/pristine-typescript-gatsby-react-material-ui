@@ -39,7 +39,7 @@ const NextAndPrev: React.FC<IProps> = (props) => {
         }
       </Box>
       <Box style={{ visibility: props.next ? "visible" : "hidden" }}>
-        <Typography gutterBottom>Next</Typography>
+        <Typography gutterBottom style={{textAlign: "right"}}>Next</Typography>
         {props.next &&
           <>
             <Link component={(p: { children: any }) => (
