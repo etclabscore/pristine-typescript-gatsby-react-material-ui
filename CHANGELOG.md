@@ -1,3 +1,11 @@
+## [1.1.2](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.1.1...1.1.2) (2020-01-18)
+
+
+### Bug Fixes
+
+* seo name ([e24e83f](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/e24e83f9c3321c27f5c0dfc37377727cbc8365c8))
+* use gatsby-theme-pristine ([ad776bb](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/ad776bb9f1672f76aeb1a1687da3228060fcee3e))
+
 ## [1.1.1](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.1.0...1.1.1) (2020-01-18)
 
 
