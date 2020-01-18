@@ -129,9 +129,6 @@ This is an example of an h5
 ###### H6
 This is an example of an h6
 
-
-
-
 ###### Code Example
 
 ```json
