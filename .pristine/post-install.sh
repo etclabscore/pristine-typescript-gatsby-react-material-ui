@@ -3,7 +3,7 @@
 BLUE="\033[0;34m"
 RED="\033[0;31m"
 NC="\033[0m" # No Color
-defaultPackageName="@etclabscore\/pristine-typescript"
+defaultPackageName="@etclabscore\/pristine-typescript-gatsby-react-material-ui"
 defaultSiteTitle="Pristine"
 defaultPathPrefix="typescript-gatsby-react-material-ui"
 
