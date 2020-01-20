@@ -1,3 +1,13 @@
+## [1.1.3](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.1.2...1.1.3) (2020-01-20)
+
+
+### Bug Fixes
+
+* add pristine post install hook ([f229c18](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/f229c18d1be8731caa9be54990f31efa86ce57f9))
+* post install ([7da8110](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/7da81104b64204120576d0839154e387210a9885))
+* update gatsby-theme-pristine ([328a106](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/328a106f9f393a05f4250825bdcb2074f8b2ca65))
+* update logoUrl and page3 ([de6c9e5](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/de6c9e598ced7a681c2387728b4e0ff24830677a))
+
 ## [1.1.2](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.1.1...1.1.2) (2020-01-18)
 
 
