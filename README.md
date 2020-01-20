@@ -22,10 +22,10 @@ This project uses [gatsby-theme-pristine](https://github.com/etclabscore/gatsby-
 
 1.  **Create a Gatsby site.**
 
-    Use the Pristine CLI to create a new site, specifying the `pristine-typescript-gatsby-react-material-ui` template.
+    Use the [Pristine CLI](https://github.com/etclabscore/pristine-cli/) to create a new site, specifying the `pristine-typescript-gatsby-react-material-ui` template.
 
     ```shell
-    pristine my-new-site
+    pristine-cli my-new-site
     // select `pristine-typescript-gatsby-react-material-ui` from the list
     ```
 
