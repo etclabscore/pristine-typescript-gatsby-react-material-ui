@@ -4,7 +4,8 @@ module.exports = {
   pathPrefix: "/pristine-typescript-gatsby-react-material-ui",
   siteMetadata: {
     title: `Pristine`,
-    description: `typescript-gatsby-react-material-ui`,
+    description: ``,
+    logoUrl: `https://github.com/etclabscore/pristine-media-assets/blob/master/pristine-logo-dark/pristine-logo-dark%20(PNG)/256x256.png?raw=true`,
     author: ``,
     menuLinks: [
       {
@@ -23,6 +24,12 @@ module.exports = {
       {
         name: 'page5',
         link: '/page-5'
+      }
+    ],
+    footerLinks: [
+      {
+        name: 'Github',
+        link: 'https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui'
       }
     ]
   },

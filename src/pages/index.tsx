@@ -23,7 +23,7 @@ const MyApp: React.FC = () => {
         <img className="logo" alt="logo" src={darkMode.value
           ? "https://github.com/etclabscore/pristine-media-assets/blob/master/pristine-logo-dark/pristine-logo-dark%20(PNG)/256x256.png?raw=true" //tslint:disable-line
           : "https://github.com/etclabscore/pristine-media-assets/blob/master/pristine-logo/pristine-logo%20(PNG)/256x256.png?raw=true" //tslint:disable-line
-        } style={{ paddingTop: "10%" }} />
+        } style={{ paddingTop: "10%", paddingBottom: "30%" }} />
       </Grid>
     </>
   );
