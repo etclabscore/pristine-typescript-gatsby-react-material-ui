@@ -6,7 +6,7 @@ import SEO from "../components/seo";
 import { Typography } from "@material-ui/core";
 
 const SecondPage = () => (
-  <>
+  <div style={{paddingBottom: "30%"}}>
     <SEO title="Page two" />
     <Typography variant="h1">Hi from the second page</Typography>
     <br />
@@ -35,7 +35,7 @@ const SecondPage = () => (
         Go to the page-3
       </Typography>
     </Link>
-  </>
+  </div>
 );
 
 export default SecondPage;
