@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Pristine`,
     description: ``,
-    logoUrl: `https://github.com/etclabscore/pristine-media-assets/blob/master/pristine-logo-dark/pristine-logo-dark%20(PNG)/256x256.png?raw=true`,
+    logoUrl: `https://user-images.githubusercontent.com/364566/72745834-80fcac80-3b65-11ea-8521-ec7bacd95687.png`,
     author: ``,
     menuLinks: [
       {
