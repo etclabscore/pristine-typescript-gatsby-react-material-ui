@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.1.3...1.1.4) (2020-01-22)
+
+
+### Bug Fixes
+
+* add primary and secondary color config ([50cce59](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/commit/50cce598579e5ef660bc12da6ae7f047d169f749))
+
 ## [1.1.3](https://github.com/etclabscore/pristine-typescript-gatsby-react-material-ui/compare/1.1.2...1.1.3) (2020-01-20)
 
 
